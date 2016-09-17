@@ -1,22 +1,22 @@
 //GET https://api.fitbit.com/1/user/-/activities/heart/date/[date]/[end-date]/[detail-level]/time/[start-time]/[end-time].json
 
-$.ajax(
-    type:'GET',
-    url:"https://api.fitbit.com/1/user/-/activities/heart/date/",
-    data:"format=json&id=-",
-    success:function(feed) {
-        document.write(feed);
-    },
-    dataType:'jsonp'
-);
-
+// $.ajax(
+//     type:'GET',
+//     url:"https://api.fitbit.com/1/user/-/activities/heart/date/",
+//     data:"format=json&id=",
+//     success:function(feed) {
+//         document.write(feed);
+//     },
+//     dataType:'jsonp'
+// );
+//
 // var express = require('express')
 //   , config = require('./config/app')
 //   , app = express()
 //   , Fitbit = require('fitbit');
 //
 // app.use(express.cookieParser());
-// app.use(express.session({secret: 'hekdhthigib'}));
+// app.use(express.session({secret: '120ec83ca57899faf8534c87aef7d06e'}));
 // app.listen(3000);
 //
 // // OAuth flow
