@@ -18,7 +18,7 @@ html, body {
 /* CHANGE THIS TO MAKE TEXT LOGO PRETTY */
 h1 {
   text-align: center;
-  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
   z-index: 2;
   font-weight: bolder;
   font-family: 'Comfortaa', cursive;
@@ -55,7 +55,7 @@ h1 a {
 }
 
 .btn {
-  margin-top: 12%;
+  margin-top: 20%;
   background: #2b8ecc;
   background-image: -webkit-linear-gradient(top, #2b8ecc, #05daff);
   background-image: -moz-linear-gradient(top, #2b8ecc, #05daff);
