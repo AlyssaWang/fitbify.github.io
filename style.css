@@ -1,0 +1,248 @@
+/* Importing ABeeZee font */
+@import 'https://fonts.googleapis.com/css?family=ABeeZee';
+
+/* Sets fixed background */
+html {
+  background: url('http://arcollegeadvising.com/wp-content/uploads/2015/06/boise-state-campus-fall.jpg') no-repeat center center fixed;
+}
+
+/* Removes paddings and margins for a full-screen effect */
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+/* CHANGE THIS TO MAKE TEXT LOGO PRETTY */
+h1 {
+  text-align: center;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+  font-family: 'Lily Script One', cursive;
+}
+
+/* Making header text clickable and pretty */
+h1 a {
+  z-index: 3;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Top header with text logo */
+.header {
+  position: absolute;
+  z-index: 1;
+  height: 75px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.9;
+  line-height: 25px;
+}
+
+/* Bottom footer with copyright */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  line-height: 0px;
+  opacity: 0.8;
+}
+
+/* College name entry box on front page */
+.input-box {
+  border: 5px solid #777777;
+  border-radius: 30px;
+  height: 50px;
+  width: 60%;
+  padding-left:10px;
+  padding-right:10px;
+  opacity: 0.7;
+  font-size: 40px;
+  text-align: left;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+/* Changing the style of the autocomplete box */
+.ui-autocomplete {
+	width: 60%;
+}
+
+/* Contains recent colleges and article boxes */
+.flex-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: center;
+  align-items: center;
+}
+
+/* Affects all items within the flex container */
+.flex-container > * {
+  padding: 10px;
+  -webkit-flex: 1 100%;
+  flex: 1 100%;
+}
+
+/* The article which changes as the user navigates the page */
+.article {
+  color: white;
+  vertical-align: middle;
+}
+
+/* Recently searched colleges box */
+.recent {
+  border: 5px solid #777777;
+  border-radius: 30px;
+  opacity: 0.7;
+  width: 15%;
+}
+
+/* Styling header in recently searched box */
+.recent h2 {
+  margin: 0;
+	font-weight: normal;
+  font-size: 16pt;
+	position: relative;
+	text-shadow: 0 -1px rgba(0,0,0,0.6);
+	background: #355681;
+	background: rgba(53,86,129, 0.8);
+	border: 1px solid #fff;
+	padding: 5px 15px;
+	color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: inset 0 0 5px rgba(53,86,129,0.5);
+}
+
+/* Styling college name in recently searched box */
+.recent h3 {
+  margin: 0;
+  text-align: center;
+	font-weight: 600;
+	position: relative;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.4);
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(53,86,129,0.3);
+  color: #e44424;
+}
+
+.recent a {
+  color: inherit;
+}
+
+/* Styling location of college in recently searched box */
+.recent h4 {
+  text-align: center;
+	margin: 0;
+	font-weight: 600;
+	position: relative;
+	font-size: 18px;
+	line-height: 20px;
+	color: #788699;
+}
+
+
+.constraint {
+  /*max-width: 250px;
+  min-width: 250px;
+  max-height: 560px;
+  */
+  overflow: scroll;
+  margin-left: 23%;
+  max-width: 660px;
+  height: 430px;
+
+
+}
+/*  */
+img.a {
+  z-index: 10;
+}
+
+/* */
+#colored {
+  position: relative;
+  background-color: white;
+  max-width: 214px;
+  min-width: 214px;
+  min-height: 1290px;
+  max-height: 1290px;
+}
+
+/*  */
+#bw {
+  position: relative;
+  /*background-color: black;
+  max-width: 194px;
+  min-width: 194px;
+  min-height: 1290px;
+  max-height: 1290px;
+  */
+  width: 660px;
+  height: 100%;
+}
+
+#festivals {
+  background-image: url("static/Filter-Icons/festivals.png");
+}
+
+#food {
+  background-image: url("static/Filter-Icons/food.png");
+}
+
+#shopping {
+  background-image: url("static/Filter-Icons/shopping.png");
+}
+
+#movies {
+  background-image: url("static/Filter-Icons/movies.png");
+}
+
+#nightclub {
+  background-image: url("static/Filter-Icons/livePerformances.png");
+}
+
+#stadium {
+  background-image: url("static/Filter-Icons/sports.png");
+}
+
+.icons {
+  width: 194px;
+  height: 194px;
+  margin: 10px;
+  display: inline-block;
+}
+
+@media only screen and  (max-width: 480px) {
+  .icons {
+    display: block;
+  }
+  .constraint{
+    margin-left: 15%;
+    height: 620px;
+  }
+}
+
+@media only screen and  (max-width: 768px) {
+  .recent {
+    margin-top: 80px;
+  }
+}
+
+/* Changes colours of main elements */
+header {background: #e44424;color:white;}
+footer {background: #a2ab58;color:white;}
+.recent {background:#ffffff;}
+
+/* To ensure flex boxes appear properly */
+@media all and (min-width: 768px) {
+  .recent {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+  .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+  footer {-webkit-order:3;order:3;}
+}

@@ -1,0 +1,113 @@
+/* Importing ABeeZee font */
+@import 'https://fonts.googleapis.com/css?family=ABeeZee';
+
+/* Sets fixed background */
+html {
+  background: url('https://images2.alphacoders.com/174/174990.jpg') no-repeat center center fixed;
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
+/* Removes paddings and margins for a full-screen effect */
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+/* CHANGE THIS TO MAKE TEXT LOGO PRETTY */
+h1 {
+  text-align: center;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+  font-weight: bolder;
+  font-family: 'Comfortaa', cursive;
+}
+
+/* Making header text clickable and pretty */
+h1 a {
+  z-index: 3;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Top header with text logo */
+.header {
+  position: absolute;
+  z-index: 1;
+  height: 75px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.9;
+  line-height: 25px;
+}
+
+/* Bottom footer with copyright */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  line-height: 0px;
+  opacity: 0.8;
+}
+
+.btn {
+  margin-top: 12%;
+  background: #2b8ecc;
+  background-image: -webkit-linear-gradient(top, #2b8ecc, #05daff);
+  background-image: -moz-linear-gradient(top, #2b8ecc, #05daff);
+  background-image: -ms-linear-gradient(top, #2b8ecc, #05daff);
+  background-image: -o-linear-gradient(top, #2b8ecc, #05daff);
+  background-image: linear-gradient(to bottom, #2b8ecc, #05daff);
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  border-radius: 2px;
+  text-shadow: 2px 2px 4px #a894a8;
+  font-family: 'Comfortaa', cursive;
+  color: #ffffff;
+  font-size: 27px;
+  padding: 13px 22px 13px 22px;
+  border: solid #ffffff 2px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.btn:hover {
+  background: #0ed9e8;
+  text-decoration: none;
+}
+
+#playlist {
+  margin-top: 40px;
+}
+
+@media only screen and  (max-width: 480px) {
+  .icons {
+    display: block;
+  }
+  .constraint{
+    margin-left: 15%;
+    height: 620px;
+  }
+}
+
+@media only screen and  (max-width: 768px) {
+  .recent {
+    margin-top: 80px;
+  }
+}
+
+/* Changes colours of main elements */
+header {background: #35d654;color:white;}
+footer {background: #35d654;color:white;}
+.recent {background:#ffffff;}
+
+/* To ensure flex boxes appear properly */
+@media all and (min-width: 768px) {
+  .recent {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+  .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+  footer {-webkit-order:3;order:3;}
+}
